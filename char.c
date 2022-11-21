@@ -1,6 +1,10 @@
 #include "main.h"
-
-char *print_char(va_list args)
+/**
+  *format_c- returns a charactera as a string
+  *@args: va_list variable
+  *Return: a string
+  */
+char *format_c(va_list args)
 {
 	char *s;
 	char c;
