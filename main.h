@@ -11,7 +11,7 @@ char *format_c(va_list args);
 int _strlen(char *s);
 char *strcpy(char *dest, char *src);
 char *format_s(va_list args);
-
+int _putchar(char c);
 
 
 
