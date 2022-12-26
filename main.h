@@ -26,8 +26,8 @@ char *itob(va_list args);
   */
 typedef struct ft
 {
-	char *fs;
+	char *id;
 	void (*func)(va_list);
-} specifier;
+} spec;
 
 #endif
