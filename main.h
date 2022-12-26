@@ -16,8 +16,8 @@ char *format_d(va_list args);
 char *_strcpy(char *dest, char *src);
 char *_reverse(va_list args);
 char *rot13(va_list args);
-
-
+char *octal(va_list args);
+char *itob(va_list args);
 
 /**
   *struct ft- a struct for format specifers and the functions it calls
