@@ -1,6 +1,10 @@
 #include "main.h"
-
-char *(*get_func)(va_list args)
+/**
+ *get_func- finds needed fucntion
+ *@i: specifier
+ *Return: needed function
+ */
+char *(*get_func(char i))(va_list)
 {
 	int i = 0;
 
@@ -15,5 +19,13 @@ char *(*get_func)(va_list args)
 		{'o', octal},
 		{'\0', NULL}
 	};
+	while (keys[k].id != '\0')
+	{
+		if (keys[k].id == i)
+			return (keys[k].func);
+		k++;
+	}
+	return (NULL);
 }
+
 
