@@ -9,12 +9,11 @@
 int _printf(const char *format, ...);
 char *format_c(va_list args);
 int _strlen(char *s);
-char *strcpy(char *dest, char *src);
 char *format_s(va_list args);
 char *itos(int n, int length);
 char *reverse_itos(char *str, int length);
 char *format_d(va_list args);
-
+char *_strcpy(char *dest, char *src);
 
 
 

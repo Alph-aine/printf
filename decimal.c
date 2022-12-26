@@ -10,6 +10,9 @@ char *reverse_itos(char *str, int length)
 	int start = 0, end = length - 1;
 	char temp;
 
+	if (str == NULL)
+		return (NULL);
+
 	while (start < end)
 	{
 		temp = str[start];
@@ -39,6 +42,7 @@ char *itos(int n, int length)
 	str = malloc(sizeof(char) * length + 2);
 	if (str == NULL) /* prevents memory leakages */
 		return (NULL);
+
 	if (n == 0)
 	{
 		str[0] = '0';
@@ -73,7 +77,7 @@ char *format_d(va_list args)
 {
 	int length, n, temp;
 
-	n = va_args(args,  int);
+	n = va_arg(args,  int);
 	temp = n;
 	length = 0;
 	if (n == 0)
