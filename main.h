@@ -14,8 +14,8 @@ char *itos(int n, int length);
 char *reverse_itos(char *str, int length);
 char *format_d(va_list args);
 char *_strcpy(char *dest, char *src);
-
-
+char *_reverse(va_list args);
+char *rot13(va_list args);
 
 
 
